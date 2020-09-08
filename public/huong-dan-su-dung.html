@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hướng dẫn sử dụng</title>
+    <link rel="shortcut icon" href="asset/images/logo_BHXH.png">
+    <link rel="stylesheet" href="https:/stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https:/use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <style>
+        #muc-luc{background:#ececec;}
+        #muc-luc a{display:block;color:#000;}
+        #content h6,#content img{margin:20px;text-align:center;}
+        p{text-indent:2em;text-align:justify;}
+        div>ol ol{padding-left:1.5em;}
+        ol{list-style:none;}
+        #muc-luc {position:fixed;width:24%;height:90%;}
+        #muc-luc h3{font-size:1.45em;}
+        #muc-luc h4{font-size:1.3em;}
+        #muc-luc h5{font-size:1.15em;}
+        #muc-luc h6{font-size:1em;}
+        @media print{
+            body{padding:30px 50px;}
+            *,h2,h3,h4,h5,h6{font-size:1.15em;}
+            #muc-luc{display:none;}
+        }
+        img{margin-bottom:20px;display: inline;margin: 0 auto;}
+    </style>
+</head>
+<body>
+<div class="container-fluid mt-2">
+    <h1 class="text-center">HƯỚNG DẪN SỬ DỤNG</h1>
+    <div class="row">
+        <div class="col-md-3">
+            <div id='muc-luc' class="mt-2 py-2">
+                <h3 class="text-center mb-3">MỤC LỤC</h3>
+                <ol>
+                    <li><a href="#thao-tac-chung"><h4>I) Thao tác sử dụng chung</h4></a>
+                        <ol>
+                            <li><a href="#login"><h5>1) Đăng nhập</h5></a></li>
+                            <li><a href="#change-pass"><h5>2) Đổi mật khẩu</h5></a></li>
+                        </ol>
+                    </li>
+                    <li><a href="#qlvb"><h4>II) Quản lý văn bản</h4></a>
+                        <ol>
+                            <li><a href="#pt"><h5>1) Quản lý phiếu trả</h5></a>
+                                <ol>
+                                    <li><a href="#gioi-thieu"><h6>1.1) Giới thiệu tổng quan</h6></a></li>
+                                    <li><a href="#quy-trinh"><h6>1.2) Quy trình xử lý</h6></a></li>
+                                    <li><a href="#them-moi"><h6>1.3) Thêm mới</h6></a></li>
+                                    <li><a href="#xem-va-in"><h6>1.4) Xem & In</h6></a></li>
+                                    <li><a href="#sua"><h6>1.5) Sửa</h6></a></li>
+                                    <li><a href="#cap-nhap-trang-thai"><h6>1.6) Cập nhập trạng thái</h6></a></li>
+                                </ol>
+                            </li>
+                        </ol>
+                    </li>
+                    <!--<li><a href="#tien-ich-mo-rong"><h4>III) Tiện ích mở rộng</h4></a>
+                        <ol>
+                            <li><a href="#muc-dich-su-dung"><h5>1) Mục đích sử dụng</h5></a>
+                            </li>
+                            <li><a href="#cai-dat"><h5>2) Cài đặt</h5></a>
+                            </li>
+                        </ol>
+                    </li>-->
+                </ol>
+            </div>
+        </div>
+        <div class="col-md-9">
+            <div id="content" class="mt-5">
+                <div id="thao-tac-chung"><h2>I. THAO TÁC SỬ DỤNG CHUNG</h2>
+                    <h3 id="login">1) Đăng nhập</h3>
+                    <p>Truy cập chính xác vào địa chỉ: <a href="http://quangtt-cs/cdbhxh" target="_blank">http://quangtt-cs/cdbhxh</a> hoặc <a href="http://10.1.215.222/cdbhxh" target="_blank">http://10.1.215.222/cdbhxh</a> trên thanh địa chỉ của trình duyệt.</p>
+                    <img src="asset/images/hdsd/login.png">
+                    <h6>Giao diện đăng nhập</h6>
+                    <p><b>Tên đăng nhập: </b>bao gồm tên + những chữ cái đầu tiên của họ và tên đệm viết liền không dấu với nhau.</p>
+                    <p>VD: Hoàng Thị Tuyết Mai => tên đăng nhập: maihtt.</p>
+                    <p><b>Mật khẩu: </b>Mặc định 123456 (phải đổi mật khẩu mới sử dụng được).</p>
+                    <h3 id="change-pass">2) Đổi mật khẩu</h3>
+                    <p>Nhấn vào mục Tài khoản trên thanh menu, chọn menu con "Đổi mật khẩu".</p>
+                    <img src="asset/images/hdsd/doi-mat-khau.png" width="95%">
+                    <h6>Menu</h6>
+                    <img src="asset/images/hdsd/doi-mat-khau-1.png">
+                    <h6>Giao diện đổi mật khẩu</h6>
+                    <p><b>Mật khẩu cũ: </b>Nhập mật khẩu hiện tại.</p>
+                    <p><b>Mật khẩu mới: </b>Nhập mật khẩu mới muốn thay đổi.</p>
+                    <p><b>Xác nhận mật khẩu mới: </b>Nhập lại mật khẩu mới.</p>
+                    <p>Sau khi nhập đầy đủ theo yêu cầu, nhấn <b>Xác nhận</b> để hệ thống kiểm tra và tiến hành đổi mật khẩu. Nếu đổi mật khẩu thành công, hệ thống sẽ tự động chuyển hướng sang trang chủ (hiện tại đang là trang nhập dữ liệu báo cáo tuần).</p>
+                </div>
+                <div id="qlvb">
+                    <h2>II) QUẢN LÝ VĂN BẢN</h2>
+                    <h2 id="pt">1) Quản lý phiếu trả</h2>
+                    <h3 id="gioi-thieu">1.1) Giới thiệu tổng quan</h3>
+                    <p>Hiện nay, quy trình quản lý Phiếu trả hồ sơ tại Phòng Chế độ BHXH được quản lý bằng phần mềm Excel thực hiện như sau: Sau khi Tiếp nhận hồ sơ từ Phòng TN và TKQ hoặc BHXH quận (huyện) -> chuyển cán bộ thụ lý kiểm tra tính pháp lý của hồ sơ. Trường hợp hồ sơ chưa đủ cơ sở để giải quyết thì lập dự thảo Phiếu trả hồ sơ  -> Trình Lãnh đạo ký -> chuyển Văn thư của phòng lấy số phiếu trả, đóng dấu ->  Lưu 01bản chính tại Văn thư của phòng , trả 01 Phiếu trả cho Phòng TN và TKQ hoặc BHXH quận (huyện). Tuy nhiên, trong quá trình thực hiện, phát sinh một số trường hợp như sau:</p>
+                    <p>- Phiếu trả quản lý bằng chương trình Excel bằng máy tính đơn nên chưa đáp ứng được tối ưu nhu cầu sử dụng của người dùng như tra cứu các thông tin, dữ liệu quản lý hay bị mất...</p>
+                    <p>- Số phiếu trả hồ sơ quản lý bằng tay nên dẫn đến trùng số...
+                    <p>- Lãnh đạo phòng muốn kiểm tra lý do vì sao phải trả hồ sơ hoặc đã trả về quận (huyện) nào.. thì phải rút phiếu trả gốc.</p>
+                    <p>Để đảm bảo việc quản lý Phiếu trả hồ sơ  Phòng Chế độ BHXH được thuận tiện, nhanh chóng, chính xác, chúng tôi đã nghiên cứu: phần mềm quản lý Phiếu trả hồ sơ được thiết kế bằng ngôn ngữ lập trình HTML, CSS, JS, PHP để bổ sung các tiện ích:</p>
+                    <p>+ Các dữ liệu cần thiết như: phát sinh số phiếu trả hồ sơ tự động tăng dần, lý do của phiếu trả hồ sơ, lãnh đạo phê duyệt, trùng số sổ BHXH, trùng họ và tên, bổ sung tính năng phát hiện trùng  số sổ BHXH, họ và tên người hưởng đã trả hồ sơ bao nhiêu lần và nội dung đã trả hồ sơ...</p>
+                    <p>+ Tổng hợp báo cáo kết quả số lượng Phiếu trả hồ sơ của từng cán bộ và từng Lãnh đạo theo thời gian cụ thể như 1 ngày, 1 tuần, 1 tháng, 1 năm....</p>
+                    <p>+ Tổng hợp báo cáo kết quả số lượng Phiếu trả hồ sơ của từng quận, huyện, thị xã theo thời gian cụ thể như 1 ngày, 1 tuần, 1 tháng, 1 năm.... để làm căn cứ cho cán bộ chuyên quản và Lãnh đạo phòng chấm điểm thi đua theo quý cho các quận, huyện, thị xã.</p>
+                    <p>+ Phần mềm chạy trên nền tảng Web nên người dùng không phải cài đặt phần mềm.</p>
+                    <!--<p>+ Người dùng có thể truy cập vào hệ thống và làm việc mọi lúc, mọi nơi; </p>-->
+                    <p>+ Không lo mất dữ liệu do hỏng phần cứng hoặc virus, ...</p>
+                    <img src="asset/images/hdsd/qlpt.png" width="95%">
+                    <h6>Menu</h6>
+                    <p>Nhấn vào mục Quản lý văn bản trên thanh menu chọn menu con "Phiếu trả"</p>
+                    <p>Nhập dữ liệu cần tìm vào các trường dữ liệu tương ứng và nhấn nút Tìm kiếm, dữ liệu các văn bản tương ứng sẽ hiển thị vào bảng phía dưới.</p>
+                    <img src="asset/images/hdsd/qlvb-giaodien.png" width="95%">
+                    <h6>Giao diện sử dụng</h6>
+                    <h3 id="quy-trinh">1.2) Quy trình xử lý</h3>
+                    <img src="asset/images/hdsd/quy-trinh-xu-ly.png" width="95%">
+                    <p><b>Lưu ý: </b>Đối với 1 số phiếu trả sau khi chuyển lãnh đạo phòng có thể ko cần trả nữa thì nhấn nút <img src="asset/images/hdsd/btn-huy-du-thao.png"> để tiến hành hủy đối với những phiếu trả đang dự thảo.</p>
+                    <h3 id="them-moi">1.3) Thêm mới</h3>
+                    <p>Nhấn nút <img src="asset/images/hdsd/btn-addnew.png"> nếu muốn thêm phiếu trả mới, khung nhập phiếu trả mới hiển thị.</p>
+                    <img src="asset/images/hdsd/them-moi-pt1.png" width="95%">
+                    <img src="asset/images/hdsd/them-moi-pt2.png" width="95%">
+                    <h6>Giao diện thêm phiếu trả mới</h6>
+                    <p>Tùy từng bộ phận sẽ có dữ liệu đầu vào khác nhau, tiến hành nhập dữ liệu vào các trường dữ liệu tương ứng</p>
+                    <img src="asset/images/hdsd/them-moi-pt3.png" width="95%">
+                    <p>Sau khi đã nhập đầy đủ dữ liệu => nhấn nút <b>Ghi</b></p>
+                    <img src="asset/images/hdsd/them-moi-pt4.png">
+                    <p>Hệ thống đưa ra 1 câu hỏi xác nhận, nhấn OK để ghi dữ liệu hoặc Hủy (Cancel) nếu muốn chỉnh sửa lại hay hủy bỏ.</p>
+                    <img src="asset/images/hdsd/them-moi-pt5.png" width="95%">
+                    <p>Góc phải màn hình xuất hiện 1 thông báo màu xanh: Thêm phiếu trả thành công => Quá trình ghi dữ liệu mới đã hoàn tất. Nhấn chuột trái vào thông báo => thông báo sẽ tự động mờ đi trong vòng 3 giây. Nhấn chuột vào <img src="asset/images/hdsd/btn-close.png"> hoặc nút <b>Esc</b> trên bàn phím để đóng khung hiện tại.</p>
+                    <h3 id="xem-va-in">1.4) Xem và In</h3>
+                    <p>Đối với tất cả các nút nhấn <b>Xem và In, Sửa, Đã xử lý, Hủy dự thảo</b> đều có 1 điểm chung là mặc định bị mờ đi, chỉ khi đã chọn 1 phiếu trả cần thao tác thì nút nhấn mới hiển thị, dữ liệu được chọn hiển thị màu xanh nhạt, tùy từng phiếu trả mỗi nút sẽ hiển thị khác nhau.</p>
+                    <p>Chọn phiếu trả cần xem, nhấn nút <img src="asset/images/hdsd/btn-view.png">, khung xem văn bản hiển thị và nhấn In để chuyển sang trang In rồi In như bình thường.</p>
+                    <img src="asset/images/hdsd/xem-phieu-tra1.png" width="95%">
+                    <h3 id="sua">1.5) Sửa</h3>
+                    <p>Tương tự phần thêm phiếu trả mới, chọn phiếu trả đang dự thảo cần sửa, nhấn nút <img src="asset/images/hdsd/btn-edit.png">, hộp sửa phiếu trả dạng popup hiển thị, chỉnh sửa dữ liệu theo ý muốn rồi nhấn Ghi, sau khi xuất hiện thông báo màu xanh "Cập nhập phiếu trả thành công" thì có chuyển sang phần In bằng nút In bên cạnh.</p>
+                    <img src="asset/images/hdsd/sua-phieu-tra.png" width="95%">
+                    <h3 id="cap-nhap-trang-thai">1.6) Cập nhập trạng thái</h3>
+                    <p>Đối với phiếu trả đang dự thảo, sau khi đã chỉnh sửa những nội dung phiếu trả phù hợp, chuyển lãnh đạo phòng đã duyệt, ký và đóng dấu thì tiến hành cập nhập trạng thái cho phiếu trả và chuyển sang bộ phận văn thư phòng để lưu trữ.</p>
+                    <p>- Chọn phiếu trả cần cập nhập trạng thái, nhấn nút <img src="asset/images/hdsd/btn-da-xu-ly.png">, hệ thống xuất hiện thông báo xác nhận, nhấn OK để đồng ý cập nhập hoặc Hủy (Cancel) để Hủy bỏ.</p>
+                </div>
+                <div id="tien-ich-mo-rong">
+                    <h2>III) Tiện ích mở rộng</h2>
+                    <h2 id="muc-dich-su-dung">1) Mục đích sử dụng</h2>
+                    <p>Được tích hợp phần mềm tiếp nhận hồ sơ giúp cho việc quản lý, thao tác và xử lý dữ liệu nhanh gọn, đơn giản hơn.</p>
+                    <h2 id="cai-dat">2) Cài đặt</h2>
+                    <p>- <a href="asset/download/cdbhxh_extension.rar">Click vào đây</a> để tải tiện ích đã nén về máy</p>
+                    <p>- Giải nén file vừa tải về vào 1 vị trí tùy chọn.</p>
+                    <p>- Mở trình duyệt chrome hoặc cốc cốc click vào biểu tượng <img src="asset/images/hdsd/btn-setting-cococ.png"> nằm góc trái trên cùng đối với trình duyệt Cốc Cốc hoặc <img src="asset/images/hdsd/btn-setting-chrome.png"> nằm góc phải trên cùng đối với trình duyệt Chrome chọn "Công cụ khác" rồi chọn "Tiện ích mở rộng" như hình dưới</p>
+                    <img src="asset/images/hdsd/open-extension.png">
+                    <p>- Kích hoạt vào tùy chọn "Chế độ dành cho nhà phát triển" sau đó Click vào nút "Tiện ích đã giải nén"</p>
+                    <img src="asset/images/hdsd/extension-display.PNG" width="95%">
+                    <p>- Chọn thư mục vừa bung file nén có tên "cdbhxh_extension" rồi chọn Select Folder</p>
+                    <p>- Nếu màn hình xuất hiện tiện ích CĐBHXH như hình dưới có nghĩa đã cài đặt thành công</p>
+                    <img src="asset/images/hdsd/extension-complete.PNG">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="asset/js/jquery-3.3.1.min.js"></script>
+<script src="asset/js/popper.min.js"></script>
+<script src="https:/stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+</html>
